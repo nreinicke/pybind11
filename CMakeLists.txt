@@ -46,9 +46,9 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 include(CMakeDependentOption)
 
-if(NOT pybind11_FIND_QUIETLY)
-  message(STATUS "pybind11 v${pybind11_VERSION} ${pybind11_VERSION_TYPE}")
-endif()
+# if(NOT pybind11_FIND_QUIETLY)
+#   message(STATUS "pybind11 v${pybind11_VERSION} ${pybind11_VERSION_TYPE}")
+# endif()
 
 # Check if pybind11 is being used directly or via add_subdirectory
 if(CMAKE_SOURCE_DIR STREQUAL PROJECT_SOURCE_DIR)
